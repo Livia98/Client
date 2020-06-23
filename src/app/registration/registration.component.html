@@ -10,9 +10,10 @@
     <span>Username angeben:</span><br>
     <input type="text" name="username"><br>
     <span>E-Mail angeben:</span><br>
-    <input type="text" name="email"><br>
+    <input type="email" name="email"><br>
     <span>Passwort eingeben:</span><br>
     <input type="password" name="password1"><br>
     <input type="password" name="password2"><br>
+    <!-- <span *ngIf="password1 == password2"></span>  -->
     <button (click)="checkInputs()">Registrieren</button>
 </div>

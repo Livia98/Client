@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RegistrationComponent implements OnInit {
 
   lever = false;
+  
 
   constructor() { }
 
@@ -19,6 +20,6 @@ export class RegistrationComponent implements OnInit {
   }
 
   checkInputs(){
-    
+
   }
 }

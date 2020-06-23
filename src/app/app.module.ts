@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
+import { OverviewComponent } from './overview/overview.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,
