@@ -1,4 +1,18 @@
-<div class="registration">
+<div *ngIf="lever ==false" class="registration">
     <h3>Noch nicht registriert?</h3>
-    <button>Jetzt registrieren</button>
+    <button (click)="showRegistration()">Jetzt registrieren</button>
+</div>
+<div *ngIf="lever == true">
+    <div class="header">
+        <h3 class="headerleft">Registrierung</h3>
+        <button class="headerright" (click)="showRegistration()">Zurück</button>
+    </div><br>
+    <span>Username angeben:</span><br>
+    <input type="text" name="username"><br>
+    <span>E-Mail angeben:</span><br>
+    <input type="text" name="email"><br>
+    <span>Passwort eingeben:</span><br>
+    <input type="password" name="password1"><br>
+    <input type="password" name="password2"><br>
+    <button (click)="checkInputs()">Registrieren</button>
 </div>

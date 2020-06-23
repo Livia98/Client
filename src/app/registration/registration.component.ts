@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
+  lever = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  showRegistration() {
+    this.lever = !this.lever;
+  }
+
+  checkInputs(){
+    
+  }
 }

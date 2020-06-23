@@ -1,0 +1,11 @@
+.header {
+    width: 500px;
+}
+.headerleft {
+    float:left;
+    width: 400px;
+}
+.headerright {
+    float: right;
+    width: 100px;
+}
