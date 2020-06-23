@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { OverviewComponent } from './overview/overview.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
     LoginComponent,
-    OverviewComponent
+    OverviewComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
