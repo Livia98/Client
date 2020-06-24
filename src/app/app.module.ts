@@ -9,6 +9,10 @@ import { LoginComponent } from './landingpage/login/login.component';
 import { OverviewComponent } from './overview/overview.component';
 import { TodolistComponent } from './overview/todolist/todolist.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { OverallListComponent } from './Dashboard/overall-list/overall-list.component';
+import { AnalyticsComponent } from './Dashboard/analytics/analytics.component';
+import { ListComponent } from './overview/list/list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
     LoginComponent,
     OverviewComponent,
     TodolistComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    DashboardComponent,
+    OverallListComponent,
+    AnalyticsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
