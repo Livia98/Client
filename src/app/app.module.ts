@@ -13,6 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { OverallListComponent } from './Dashboard/overall-list/overall-list.component';
 import { AnalyticsComponent } from './Dashboard/analytics/analytics.component';
 import { ListComponent } from './overview/list/list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ListComponent } from './overview/list/list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
