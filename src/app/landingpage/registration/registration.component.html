@@ -2,7 +2,7 @@
     <h3>Noch nicht registriert?</h3>
     <button (click)="showRegistration()">Jetzt registrieren</button>
 </div>
-<mat-form-field *ngIf="lever == true">
+<div *ngIf="lever == true">
     <div class="header">
         <h3 class="headerleft">Registrierung</h3>
         <button class="headerright" (click)="showRegistration()">Zurück</button>
@@ -14,5 +14,6 @@
     <span>Passwort eingeben:</span><br>
     <input type="password" name="password1"><br>
     <input type="password" name="password2"><br>
+    <!-- <span *ngIf="password1 == password2"></span>  -->
     <button (click)="checkInputs()">Registrieren</button>
-</mat-form-field>
+</div>

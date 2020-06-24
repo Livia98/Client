@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { AppModule } from './app.module';
-import { AppRoutingModule } from './app-routing.module';
-import { LandingpageComponent } from './landingpage/landingpage.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
