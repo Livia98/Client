@@ -4,10 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
-import { RegistrationComponent } from './registration/registration.component';
-import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './landingpage/registration/registration.component';
+import { LoginComponent } from './landingpage/login/login.component';
 import { OverviewComponent } from './overview/overview.component';
-import { TodolistComponent } from './todolist/todolist.component';
+import { TodolistComponent } from './overview/todolist/todolist.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { TodolistComponent } from './todolist/todolist.component';
     RegistrationComponent,
     LoginComponent,
     OverviewComponent,
-    TodolistComponent
+    TodolistComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,
