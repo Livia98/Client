@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { OverviewRoutingModule } from './overview-routing.module';
 import { OverviewComponent } from './overview.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
 
 
 @NgModule({
-  declarations: [OverviewComponent],
+  declarations: [TodolistComponent, OverviewComponent],
   imports: [
     CommonModule,
     OverviewRoutingModule
