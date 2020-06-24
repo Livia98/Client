@@ -1,7 +1,7 @@
 <ul>
     <li *ngFor= "let todo of todolist">
-        ID: {{todo.id}} <br>
-        Beschreibung: {{todo.name}}<br> 
-        Person ID: {{todo.person_id}}<br>
+        ID der Aufgabenliste: {{todo.id}} <br>
+        Beschreibung der Aufgabenliste: {{todo.name}}<br>
+        <pre>Aufgaben: {{todo.ownTodo | json}}<br></pre>
     </li>
 </ul>
