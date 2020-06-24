@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { OverviewComponent } from './overview/overview.component';
 
 
 const routes: Routes = [
-  { path: 'overview', component: OverviewComponent },
-  { path: '', redirectTo: '/app-root', pathMatch: 'full' }
+  { path: 'dashboard', loadChildren: ()=> import('./dashboard/dashboard.module').then(module=>module.DashboardModule) },
+   {path: 'landingpage', loadChildren: ()=> import('./landingpage/landingpage.module').then(module=>module.LandingpageModule)},
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
 
 @NgModule({

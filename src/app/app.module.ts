@@ -6,21 +6,21 @@ import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
-import { OverviewComponent } from './overview/overview.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
     LoginComponent,
-    OverviewComponent,
     TodolistComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
