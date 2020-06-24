@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatastorageService } from 'src/app/datastorage.service';
 
 @Component({
   selector: 'app-todolist',
@@ -9,31 +10,17 @@ export class TodolistComponent implements OnInit {
 
   todolist: any[] = [];
 
-  constructor() { }
+  constructor(public ds: DatastorageService) { }
 
   ngOnInit(): void {
     this.getToDoList();
   }
 
   getToDoList() {
-    this.todolist = [
-    {
-      id: 1,
-      titel: "Spaetzle Machen",
-      status: "Offen",
-      beschreibung: "Pressen",
-      gewicht: 5,
-      zeitpunkt: "28.04.2021",
-    },
-    {
-      id: 2,
-      titel: "Ja",
-      status: "Genau",
-      beschreibung: "Nein",
-      gewicht: 2,
-      zeitpunkt: "06.09.1969",
-    }
-    ]
+    this.ds.loadToDoListe().subscribe(data => {
+      this.todolist = data;
+      console.log(this.todolist);
+    });
   }
  
 }
